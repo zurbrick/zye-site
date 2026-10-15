@@ -5,8 +5,107 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Zye.AI: a small AI studio building tools for builders</title>
 <meta name="description" content="Zye.AI is a small AI studio making tools for builders and vibe coders: The Build Brief, a free daily AI brief, and Unbroke, which fixes broken vibe-coded apps.">
-<meta property="og:title" content="Zye.AI: tools for builders">
-<meta property="og:description" content="The Build Brief and Unbroke, from Zye.AI.">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large">
+<link rel="canonical" href="https://zye.ai/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Zye.AI">
+<meta property="og:title" content="Zye.AI: a small AI studio building tools for builders">
+<meta property="og:description" content="Zye.AI is a small AI studio making tools for builders and vibe coders: The Build Brief, a free daily AI brief, and Unbroke, which fixes broken vibe-coded apps.">
+<meta property="og:url" content="https://zye.ai/">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Zye.AI: a small AI studio building tools for builders">
+<meta name="twitter:description" content="Zye.AI is a small AI studio making tools for builders and vibe coders: The Build Brief, a free daily AI brief, and Unbroke, which fixes broken vibe-coded apps.">
+<link rel="alternate" type="text/markdown" title="LLM summary" href="https://zye.ai/llms.txt">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Organization",
+   "@id": "https://zye.ai/#org",
+   "name": "Zye.AI",
+   "url": "https://zye.ai/",
+   "email": "hello@zye.ai"
+  },
+  {
+   "@type": "WebSite",
+   "@id": "https://zye.ai/#website",
+   "name": "Zye.AI",
+   "url": "https://zye.ai/",
+   "description": "Zye.AI is a small AI studio making tools for builders and vibe coders: The Build Brief, a free daily AI brief, and Unbroke, which fixes broken vibe-coded apps.",
+   "publisher": {
+    "@id": "https://zye.ai/#org"
+   },
+   "inLanguage": "en-US"
+  },
+  {
+   "@type": "ItemList",
+   "name": "Zye.AI products",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "The Build Brief",
+     "url": "https://buildbrief.zye.ai/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Unbroke",
+     "url": "https://unbroke.zye.ai/"
+    }
+   ]
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "What is Zye.AI?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Zye.AI is a small, independent AI studio that makes practical tools for builders and vibe coders. It currently runs two products: The Build Brief and Unbroke."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What is The Build Brief?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The Build Brief is a free daily AI brief for builders, covering the launches, tools and techniques that matter if you ship with AI. You can subscribe at buildbrief.zye.ai and unsubscribe anytime."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What is Unbroke?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Unbroke fixes broken vibe-coded apps. You send your error or repo, agents diagnose it, a human reviews the fix, and you get a plain-English explanation. Details and pricing are at unbroke.zye.ai."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Are fixes done by AI or by people?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Both. Agents do the heavy lifting, and a person reviews what goes out."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How do I contact Zye.AI?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Email hello@zye.ai with questions, ideas, or a broken app."
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%238b5cf6'/%3E%3Ctext x='16' y='22' font-family='Arial' font-weight='700' font-size='17' text-anchor='middle' fill='%230b0f17'%3EZ%3C/text%3E%3C/svg%3E">
 <style>
 :root{--bg:#0b0d14;--card:#151926;--line:#252a3b;--text:#eceff6;--muted:#9ca3b8;--accent:#8b5cf6;--accent2:#22d3ee;--bb:#22d3ee;--ub:#fb923c;--ok:#34d399;--radius:16px;--max:1100px}
@@ -65,12 +164,22 @@ footer{padding:34px 0;color:var(--muted);font-size:14px}
 footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 @media (max-width:820px){.g2,.g3{grid-template-columns:1fr}.navr .hide{display:none}.hero{padding:80px 0 70px}section{padding:64px 0}}
 </style>
+<style>
+.faqx{margin-top:28px;display:grid;gap:12px;max-width:820px}
+.faqx details{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:4px 20px}
+.faqx summary{cursor:pointer;list-style:none;padding:16px 0;font-weight:700;display:flex;justify-content:space-between;gap:16px}
+.faqx summary::-webkit-details-marker{display:none}
+.faqx summary::after{content:"+";color:var(--accent);font-size:20px;line-height:1}
+.faqx details[open] summary::after{content:"\2013"}
+.faqx details p{color:var(--muted);padding:0 0 16px}
+</style>
 </head>
 <body>
 <nav><div class="wrap">
   <a class="logo" href="#"><span class="logo-mark">Z</span>Zye.AI</a>
   <div class="navr"><a class="hide" href="#products">Products</a><a class="hide" href="#about">About</a><a href="#contact">Contact</a></div>
 </div></nav>
+<main id="main">
 
 <header class="hero"><div class="wrap">
   <span class="pill"><span class="dot"></span>A small AI studio</span>
@@ -112,12 +221,25 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
   </div>
 </div></section>
 
+<section id="faq"><div class="wrap">
+  <div class="eyebrow">FAQ</div>
+  <h2>Frequently asked questions</h2>
+  <div class="faqx">
+    <details open><summary>What is Zye.AI?</summary><p>Zye.AI is a small, independent AI studio that makes practical tools for builders and vibe coders. It currently runs two products: The Build Brief and Unbroke.</p></details>
+    <details><summary>What is The Build Brief?</summary><p>The Build Brief is a free daily AI brief for builders, covering the launches, tools and techniques that matter if you ship with AI. You can subscribe at buildbrief.zye.ai and unsubscribe anytime.</p></details>
+    <details><summary>What is Unbroke?</summary><p>Unbroke fixes broken vibe-coded apps. You send your error or repo, agents diagnose it, a human reviews the fix, and you get a plain-English explanation. Details and pricing are at unbroke.zye.ai.</p></details>
+    <details><summary>Are fixes done by AI or by people?</summary><p>Both. Agents do the heavy lifting, and a person reviews what goes out.</p></details>
+    <details><summary>How do I contact Zye.AI?</summary><p>Email hello@zye.ai with questions, ideas, or a broken app.</p></details>
+  </div>
+</div></section>
 <section id="contact" class="contact"><div class="wrap">
   <div class="eyebrow">Contact</div>
   <h2>Say hello</h2>
   <p class="sub">Questions, ideas, or a broken app? Reach us by email.</p>
   <div class="ctas"><a class="btn" href="mailto:hello@zye.ai">hello@zye.ai</a><a class="btn ghost" href="http://unbroke.zye.ai">Need a fix? Go to Unbroke</a></div>
 </div></section>
+
+</main>
 
 <footer><div class="wrap"><span>© 2026 Zye.AI</span><span><a href="http://buildbrief.zye.ai">The Build Brief</a> · <a href="http://unbroke.zye.ai">Unbroke</a></span></div></footer>
 </body></html>

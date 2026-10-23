@@ -1,10 +1,10 @@
 # Zye.AI
 
-> Zye.AI is a small, independent AI studio making practical tools for builders and vibe coders.
+> Zye.AI is a small, independent AI studio making practical tools that help individuals build with AI. Our products are for people, not companies.
 
 ## Products
-- [The Build Brief](https://buildbrief.zye.ai/): free weekday AI brief for builders (AI models, agents, vibe coding, tech and security), every weekday at 7:30 AM ET.
-- [Unbroke](https://unbroke.zye.ai/): fixes broken vibe-coded apps. Agents diagnose, a human reviews every fix. Quick Diagnosis $29, Fix It $149, Launch Check $399.
+- [The Build Brief](https://buildbrief.zye.ai/): free AI brief for people who build with AI (AI models, agents, vibe coding, tech and security). Join the list. First issue coming soon.
+- [Unbroke](https://unbroke.zye.ai/): fixes broken vibe-coded apps. Agents diagnose, a human reviews every fix. Pricing and checkout are coming soon.
 
 ## Contact
 - Email: hello@zye.ai

@@ -157,6 +157,43 @@ footer{padding:28px 0;font-size:14px;color:var(--mut)}footer .w{display:flex;jus
 @media(max-width:820px){.hero .row,.how{grid-template-columns:1fr;gap:28px}.prod{grid-template-columns:1fr;gap:10px}.prod .no{font-size:40px}
 header nav a.h{display:none}.hero{padding:44px 0}section{padding:52px 0}header img{height:34px}.w{padding:0 22px}}
 </style>
+<style>.ga-privacy{padding:22px 0;border-top:1px solid rgba(127,127,127,.25);font-size:14px;line-height:1.55}.ga-privacy .ga-in{max-width:1080px;margin:0 auto;padding:0 24px}.ga-privacy p{margin:0;max-width:60em;opacity:.85}.ga-cs-w{display:none}.ga-on .ga-cs-w{display:inline}#ga-cb{position:fixed;left:12px;right:12px;bottom:12px;z-index:2147483000;max-width:640px;margin:0 auto;background:#fff;color:#111;border:1px solid #bbb;border-radius:10px;box-shadow:0 6px 24px rgba(0,0,0,.25);padding:16px 18px;font:15px/1.5 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;text-align:left}#ga-cb p{margin:0 0 12px}#ga-cb a{color:#0645ad;text-decoration:underline}#ga-cb .ga-cb-b{display:flex;gap:10px;flex-wrap:wrap}#ga-cb button{flex:1 1 140px;min-height:44px;font:600 15px/1.2 inherit;background:#fff;color:#111;border:2px solid #111;border-radius:8px;padding:10px 14px;cursor:pointer}#ga-cb button:focus-visible{outline:3px solid #0645ad;outline-offset:2px}.ga-policy{max-width:760px;margin:0 auto;padding:40px 24px 56px;line-height:1.65;font-size:17px;text-align:left}.ga-policy h1{font-size:2em;line-height:1.2;margin:0 0 .5em}.ga-policy h2{font-size:1.25em;line-height:1.3;margin:1.8em 0 .5em}.ga-policy ul{padding-left:1.2em}.ga-policy li{margin:.35em 0}.ga-policy a{word-break:break-word}</style>
+<!-- Google tag GA4 zye with consent banner: tools/ga4.py -->
+<script data-ga4="G-WB161GF42X">
+(function(){
+var HOSTS=["zye.ai", "www.zye.ai"],EU=["AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "DE", "GR", "HU", "IE", "IT", "LV", "LT", "LU", "MT", "NL", "PL", "PT", "RO", "SK", "SI", "ES", "SE", "IS", "LI", "NO", "GB", "UK", "CH"],K='ga_consent_v1';
+var q='&'+location.search.slice(1)+'&',forceEU=q.indexOf('&ga_debug=eu&')>=0,dbg=forceEU||q.indexOf('&ga_debug=1&')>=0;
+if(HOSTS.indexOf(location.hostname)<0&&!dbg)return;
+document.documentElement.className+=' ga-on';
+window.dataLayer=window.dataLayer||[];window.gtag=function(){dataLayer.push(arguments);};
+var cfg={allow_google_signals:false,allow_ad_personalization_signals:false};if(dbg)cfg.debug_mode=true;
+function get(){try{return localStorage.getItem(K)}catch(e){return null}}
+function put(v){try{localStorage.setItem(K,v)}catch(e){}}
+function load(){if(window.__gaOn)return;window.__gaOn=true;window['ga-disable-G-WB161GF42X']=false;gtag('js',new Date());gtag('config','G-WB161GF42X',cfg);var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-WB161GF42X';document.head.appendChild(s);}
+function wipe(){window['ga-disable-G-WB161GF42X']=true;var h=location.hostname.split('.');document.cookie.split(';').forEach(function(c){var n=c.split('=')[0].trim();if(n!=='_ga'&&n.indexOf('_ga_')!==0)return;document.cookie=n+'=; Max-Age=0; path=/';for(var i=0;i<h.length-1;i++)document.cookie=n+'=; Max-Age=0; path=/; domain=.'+h.slice(i).join('.');});}
+function ready(f){if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',f);else f();}
+function banner(){if(document.getElementById('ga-cb'))return;var d=document.createElement('div');d.id='ga-cb';d.setAttribute('role','region');d.setAttribute('aria-label','Cookie choice');d.innerHTML="<p>We'd like to use Google Analytics cookies to count visits and see how pages are used. Google processes this data and may transfer it to the US. We don't sell your information or use it for ads. You can change your choice anytime under Cookie settings. <a href=\"/privacy/\">Privacy policy</a></p><div class=\"ga-cb-b\"><button type=\"button\" data-ga-c=\"1\">Accept analytics</button><button type=\"button\" data-ga-c=\"0\">Reject</button></div>";
+ d.addEventListener('click',function(e){var b=e.target.closest?e.target.closest('[data-ga-c]'):null;if(!b)return;if(b.getAttribute('data-ga-c')==='1'){put('granted');load();}else{put('denied');wipe();}d.parentNode.removeChild(d);});
+ document.body.appendChild(d);}
+document.addEventListener('click',function(e){var b=e.target.closest?e.target.closest('[data-ga-settings]'):null;if(b){e.preventDefault();ready(banner);}});
+function region(cb){if(forceEU)return cb(true);var tz='';try{tz=Intl.DateTimeFormat().resolvedOptions().timeZone||''}catch(e){}
+ var tzEU=tz.indexOf('Europe/')===0||['Atlantic/Reykjavik','Atlantic/Canary','Atlantic/Madeira','Atlantic/Azores','Atlantic/Faroe'].indexOf(tz)>=0;
+ var done=false,fin=function(v){if(!done){done=true;cb(v);}};if(!window.fetch)return fin(tzEU);var t=setTimeout(function(){fin(tzEU)},2500);
+ fetch('/cdn-cgi/trace',{cache:'no-store'}).then(function(r){return r.text()}).then(function(x){clearTimeout(t);var m=/(^|\n)loc=([A-Z]{2})/.exec(x);fin(m?EU.indexOf(m[2])>=0:tzEU);}).catch(function(){clearTimeout(t);fin(tzEU);});}
+var c=get();if(c==='granted')load();else if(c==='denied')wipe();else region(function(eu){if(eu)ready(banner);else load();});
+})();
+</script>
+<script>
+(function(){try{
+var ev=function(n,p){try{if(window.__gaOn&&typeof gtag==='function')gtag('event',n,p);}catch(e){}};
+var lead=function(el){return el&&(el.hasAttribute('data-ga-lead')||(el.textContent||'').replace(/\s+/g,' ').trim().toLowerCase()==='start a project');};
+document.addEventListener('click',function(e){var t=e.target&&e.target.closest?e.target.closest('a,button'):null;
+ if(!t||(t.type==='submit'&&t.form))return; if(lead(t))ev('generate_lead',{method:'cta_click',link_text:'Start a project'});},{capture:true,passive:true});
+document.addEventListener('submit',function(e){var f=e.target;if(!f||f.tagName!=='FORM')return;var a=(f.getAttribute('action')||'');
+ if(f.id==='intake'||f.hasAttribute('data-ga-lead'))ev('generate_lead',{method:'form_submit',form_id:f.id||''});
+ else if(f.hasAttribute('data-ga-signup')||/beehiiv\.com\/subscribe|buttondown\.com\/api\/emails\/embed-subscribe/i.test(a))ev('sign_up',{method:'newsletter'});},{capture:true,passive:true});
+}catch(e){}})();
+</script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -199,6 +236,8 @@ header nav a.h{display:none}.hero{padding:44px 0}section{padding:52px 0}header i
 <p><a class="mail" href="mailto:hello@zye.ai">hello@zye.ai</a></p>
 </div></section>
 </main>
+<section class="ga-privacy" id="analytics-privacy" aria-label="Analytics and privacy"><div class="ga-in"><p>This site uses Google Analytics, which sets cookies to count visits and see how pages are used. We don't sell your information or use it for ads. <a href="/privacy/">Privacy policy</a> · <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener noreferrer">How Google uses this data</a> · <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener noreferrer">Opt out of Google Analytics</a><span class="ga-cs-w"> · <a href="#cookie-settings" class="ga-cs" data-ga-settings role="button">Cookie settings</a></span></p></div></section>
 <footer><div class="w"><span>© 2026 Zye.AI · <a href="https://buildbrief.zye.ai/" target="_blank" rel="noopener noreferrer">The Build Brief</a> · <a href="https://unbroke.zye.ai/" target="_blank" rel="noopener noreferrer">Unbroke</a></span><span>Powered by <a href="https://zye.ai/">Zye.AI</a></span></div></footer>
+<script data-ext-links="new-tab">/* external links open in a new tab (tools/external_links.py) */(function(){var C={"apex": "zye.ai", "extra": [], "other": ["buildbrief.zye.ai", "unbroke.zye.ai", "hq.zye.ai"]};function ext(h){h=(h||"").toLowerCase();if(!h||h===location.hostname||C.extra.indexOf(h)>=0)return false;if(h===C.apex||h==="www."+C.apex)return false;if(h.slice(-C.apex.length-1)==="."+C.apex){for(var i=0;i<C.other.length;i++){var o=C.other[i];if(h===o||h.slice(-o.length-1)==="."+o)return true}return false}return true}function fix(a){try{var u=new URL(a.getAttribute("href"),location.href)}catch(e){return}if(!/^https?:$/.test(u.protocol)||!ext(u.hostname))return;a.target="_blank";var r=(a.getAttribute("rel")||"").split(/\s+/).filter(Boolean);["noopener","noreferrer"].forEach(function(x){if(r.indexOf(x)<0)r.push(x)});a.setAttribute("rel",r.join(" "))}document.addEventListener("click",function(e){var a=e.target&&e.target.closest&&e.target.closest("a[href]");if(a)fix(a)},true);document.addEventListener("auxclick",function(e){var a=e.target&&e.target.closest&&e.target.closest("a[href]");if(a)fix(a)},true)})();</script>
 </body>
 </html>
